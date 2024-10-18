@@ -90,18 +90,60 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/IMG/Foto1.jpg'); /* Ganti dengan path gambar */
+    background-image: url('/IMG/Foto1.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.2; /* Mengatur tingkat transparansi gambar (0.0 - 1.0) */
-    z-index: -1; /* Memastikan overlay berada di belakang konten */
+    opacity: 0.1;
+    z-index: -1;
 }
 .teks-content1 {
 	text-align: center;
 	text-align: justify;
 	line-height: 22px;
 	padding: 10px;
+}
+
+.home-articles {
+	padding: 18px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin-top: 23px;
+	position: relative;
+}
+  
+.home-article {
+	display: flex;
+	margin: 25px;
+}
+  
+.home-article img {
+	width: 300px;
+}
+  
+.home-article-content {
+	align-self: center;
+	padding: 25px;
+}
+  
+.home-article-content a {
+	text-decoration: none;
+	color: black;
+}
+
+footer{
+	clear: both;
+	margin-bottom: 0;
+	background: green;
+	bottom:0;
+	width:100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	text-align:center;
+	justify-content: center;
+	color: white;
+	font-size: 15px;
 }
 
 @media screen and (max-width: 768px) {
@@ -165,6 +207,19 @@ section {
 		h4{
 			font-size: 13px;
 		}
+	}
+
+	.home-article{
+		display: flex;
+		flex-wrap: wrap;
+		/* justify-content: center; */
+		text-align: start;
+		.home-article-img{
+			img{
+				width: 100%;;
+			}
+		}
+
 	}
 	
 }
